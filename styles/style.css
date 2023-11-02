@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Frankfurter";
+  src: url("../fonts/frankfurter-regular.woff2") format("woff2");
+}
+
+/* naar een idee van Jen Simmons */
+*, *::after, *::before {
+  box-sizing:border-box;
+}
+
+:root {
+  --color-headings: #E06187;
+ }
+
+body {
+  margin:0;
+  background-image: url("../images/achtergrond.png");
+}
+
+button:not([disabled]) {
+  cursor:pointer;
+}
+
+img {
+  max-width:100%;
+}
+
+
+
+/********************/
+/* ALGEMENE STYLING */
+/********************/
+
+h1 {
+  color:var(--color-headings);
+  font-family: "Frankfurter";
+  text-align: center;
+  font-size: 3em;
+  letter-spacing: 1px;
+}
