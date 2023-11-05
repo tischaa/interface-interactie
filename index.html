@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="jouw naam" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://use.typekit.net/rtc2dib.css" />
+    <title>VIDii 2023/24 - Tijdlijn</title>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="author" content="jouw naam">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://use.typekit.net/rtc2dib.css">
-	<title>VIDii 2023/24 - Tijdlijn</title>
+    <link href="styles/style.css" rel="stylesheet" />
+  </head>
 
-	<link href="styles/style.css" rel="stylesheet">
-</head>
+  <body>
+    <h1>Hello Kitty's memories</h1>
+    <section>
+      <article>
+        <article class="image-container">
+          <img class="closed-envelope" src="images/envelop.png" alt="envelop" />
+          <img
+            class="transition-image"
+            src="images/envelop2.png"
+            alt="envelop"
+          />
+        </article>
+        <p>1974</p>
+      </article>
+      <article>
+        <img src="images/filmrol.png" alt="filmrol" />
+        <p>1983</p>
+      </article>
+      <article class="image-container2">
+        <img class="foto1" src="images/polaroid1.png" alt="polaroids" />
+        <img class="foto2" src="images/polaroid2.png" alt="polaroids" />
+        <p>1994</p>
+      </article>
+      <article class="tv-uit">
+        <img id="tv-uit-image" src="images/tv-uit.png" alt="tv uit" />
+        <img id="tv-aan-image" src="images/tv-aan.png" alt="tv aan" style="opacity: 0;"/>
+        <p>2008</p>
+      </article>
+      <button id="toggle-button"><p>TV aan</p></button>
+    </section>
 
-<body>
-	<h1>Hello Kitty's memories</h1>
-	<section>
-		<article>
-			<article class="image-container">
-				<img src="images/envelop.png" alt="envelop">
-				<img class="transition-image" src="images/envelop2.png" alt="envelop">
-			</article>
-			<p>1974</p>
-		</article>
-		<article>
-			<img src="images/filmrol.png" alt="filmrol">
-			<p>1983</p>
-		</article>
-		<article>
-			<img src="images/polaroids.png" alt="polaroids">
-            <p>1994</p>
-		</article>
-	</section>
-
-	<script src="scripts/script.js"></script>
-</body>
-
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
