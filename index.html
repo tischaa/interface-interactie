@@ -2,7 +2,7 @@
 <html lang="nl">
   <head>
     <meta charset="UTF-8" />
-    <meta name="author" content="jouw naam" />
+    <meta name="author" content="Tischa Jungerius" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://use.typekit.net/rtc2dib.css" />
     <title>VIDii 2023/24 - Tijdlijn</title>
@@ -11,16 +11,12 @@
   </head>
 
   <body>
-    <h1>Hello Kitty's memories</h1>
-    <section>
+    <h1>Hello Kitty's memory wall</h1>
+    <section class="grid-container">
       <article>
         <article class="image-container">
           <img class="closed-envelope" src="images/envelop.png" alt="envelop" />
-          <img
-            class="transition-image"
-            src="images/envelop2.png"
-            alt="envelop"
-          />
+          <img class="transition-image" src="images/envelop2.png" alt="envelop"/>
         </article>
         <p>1974</p>
       </article>
@@ -33,13 +29,24 @@
         <img class="foto2" src="images/polaroid2.png" alt="polaroids" />
         <p>1994</p>
       </article>
-      <article class="tv-uit">
+      <article class="image-container3">
         <img id="tv-uit-image" src="images/tv-uit.png" alt="tv uit" />
-        <img id="tv-aan-image" src="images/tv-aan.png" alt="tv aan" style="opacity: 0;"/>
+        <!-- <img id="tv-aan-image" src="images/tv-aan.png" alt="tv aan" style="display: none;"/> -->
+        <button id="toggle-button">TV aan</button>
         <p>2008</p>
       </article>
-      <button id="toggle-button"><p>TV aan</p></button>
+      <article>
+        <img src="images/ballon.png" alt="luchtballon" />
+        <p>2014</p>
+      </article>
+      <article>
+        <video width="320" height="240" controls>
+          <source src="images/video2.mp4" type="video/mp4">
+       </video>
+        <p>2023</p>
+      </article>
     </section>
+
 
     <script src="scripts/script.js"></script>
   </body>
