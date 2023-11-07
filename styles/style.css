@@ -16,6 +16,7 @@ naar een idee van Jen Simmons *,
   --color-dialog-border: #FFB6D2;
   --color-dialog-background: #fff5f9;
   --color-dialog-text: #4b0f2f;
+  --color-hellokitty-red: #CE000C;
 }
 
 ::-webkit-scrollbar {
@@ -30,7 +31,7 @@ naar een idee van Jen Simmons *,
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--color-headings); 
+  background: var(--color-hellokitty-red);; 
   border-radius: 10px;
 }
 
@@ -69,7 +70,7 @@ img {
 /********************/
 
 h1 {
-  color: var(--color-headings);
+  color: var(--color-hellokitty-red);
   font-family: "Frankfurter";
   text-align: center;
   font-size: 3em;
@@ -77,7 +78,7 @@ h1 {
 }
 
 h2 {
-  color: var(--color-headings);
+  color: var(--color-hellokitty-red);
   font-family: "Frankfurter";
   text-align: center;
   font-size: 2em;
@@ -85,7 +86,7 @@ h2 {
 }
 
 a{
-  color: var(--color-headings);
+  color: var(--color-hellokitty-red);
 }
 
 p {
@@ -287,8 +288,6 @@ article:nth-of-type(5) img{
   to   { transform: translate(0, -0em); }    
 }
 
-
-
 /* Video */
 
 .video2{
@@ -305,7 +304,7 @@ dialog {
   /* padding: 1em; */
   width: 55em;
   height: 25em;
-  border-color: var(--color-headings);
+  border-color: var(--color-hellokitty-red);
   background-color: var(--color-dialog-background);
   border-style: dotted;
   border-radius: 1em;
@@ -341,6 +340,19 @@ dialog p {
   color: #FEFEFE;
 }
 
+#hiddenModal > .button-close {
+  width: 2em;
+  height: 2em;
+  border-radius: 20%;
+  border-style: none;
+  color: var(--color-hellokitty-red);
+  background:  var(--color-dialog-background);
+  font-family: "futura-bold", sans-serif;
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+}
+
 #hiddenModal h2 {
   color: #FEFEFE;
 }
@@ -360,7 +372,7 @@ dialog article{
   text-decoration: none;
   text-align: center;
   border-style:dotted ;
-  border-color: #e06187;
+  border-color: var(--color-hellokitty-red);
   display: block;
   margin: auto;
 }
@@ -371,7 +383,7 @@ dialog article{
 }
 
 #btnOpen:hover {
-  background: #b34f6d;
+  background: var(--color-hellokitty-red);
   text-decoration: none;
   border-color: #ffecf1;
 }
@@ -399,7 +411,7 @@ dialog article{
   border-radius: 20%;
   border-style: none;
   color:  var(--color-dialog-background);
-  background: var(--color-headings);
+  background: var(--color-hellokitty-red);
   font-family: "futura-bold", sans-serif;
   position: absolute;
   top: 1.5em;
@@ -433,4 +445,15 @@ dialog::backdrop {
   width: 18%;
   display: block;
   margin: auto;
+}
+
+.column img{
+height: 80%;
+}
+
+Clearfix (clear floats)
+.gallery::after {
+  content: "";
+  clear: both;
+  display: table;
 }
