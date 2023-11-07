@@ -12,8 +12,6 @@ var tvAan = false;
 
 
 tvButton.addEventListener("click", function() {
-  
-  // const tvUitVisible = window.getComputedStyle(tvUitImage).getPropertyValue("display") === "inline-block";
 
   if (tvAan == true) {
     // tv uitzetten
@@ -113,6 +111,26 @@ openSixthModal.addEventListener("click", () =>{
 closeSixthModal.addEventListener("click", () =>{
   sixthModal.close();
 });
+
+const hiddenModal = document.querySelector("#hiddenModal");
+const openHiddenModal = document.querySelector(".open-button7");
+const closeHiddenModal = document.querySelector("#close-button7");
+
+openHiddenModal.addEventListener("click", () =>{
+  hiddenModal.showModal();
+});
+
+closeHiddenModal.addEventListener("click", () =>{
+  hiddenModal.close();
+});
+
+//Hide/show tutorial: https://bobbyhadz.com/blog/javascript-hide-element-after-few-seconds
+const hiddenButton = document.getElementById('hiddenButton');
+
+setTimeout(() => {
+  hiddenButton.style.display = 'block';
+
+}, 10000);
 
 
 

@@ -15,6 +15,7 @@ naar een idee van Jen Simmons *,
   --color-paragraph-hover: #ffffff;
   --color-dialog-border: #FFB6D2;
   --color-dialog-background: #fff5f9;
+  --color-dialog-text: #4b0f2f;
 }
 
 ::-webkit-scrollbar {
@@ -81,6 +82,10 @@ h2 {
   text-align: center;
   font-size: 2em;
   letter-spacing: 1px;
+}
+
+a{
+  color: var(--color-headings);
 }
 
 p {
@@ -159,23 +164,25 @@ article:nth-of-type(3) {
 }
 
 .image-container2 img{
-  transform: translate(4.5em);
+  transform: translate(5.5em);
 }
 
 /* .image-container2 p{
   transform: translate(0em, -2em);
 } */
 
+/* Achterste polaroid */
 .image-container2 > img:nth-of-type(1) {
   flex: 1;
-  padding: 30px;
+  /* padding: 30px; */
   max-width: 200px;
   position: relative;
   scale: 0.8;
 }
 
+/* Voorste polaroid */
 .image-container2 > img:nth-of-type(2) {
-  padding: 30px;
+  padding: 1em;
   max-width: 200px;
   position: absolute;
   rotate: 0deg;
@@ -185,14 +192,16 @@ article:nth-of-type(3) {
   scale: 0.8;
 }
 
+/* Achterste polaroid hover state*/
 .image-container2:hover > img:nth-of-type(1) {
-  padding: 30px;
   max-width: 200px;
   position: relative;
   transform: translate(20px);
   rotate: -10deg; 
+  scale: 0.8;
 }
 
+/* Voorste polaroid hover state*/
 .image-container2:hover > img:nth-of-type(2) {
   padding: 30px;
   max-width: 200px;
@@ -282,25 +291,65 @@ article:nth-of-type(5) img{
 
 /* Video */
 
-video:nth-of-type(1){
-  border-color: black;
-  border-width: 1em;
+.video2{
+  width: 20em; 
+  height: auto;
   transform: translate(1em);
+  border-radius: 0.8em;
 }
-
-
 
 /* Modal styling */
 
+/* Styling van dialoogvensters */
 dialog {
-  padding: 1em;
+  /* padding: 1em; */
   width: 55em;
   height: 25em;
   border-color: var(--color-headings);
   background-color: var(--color-dialog-background);
   border-style: dotted;
+  border-radius: 1em;
 }
 
+/* Styling van secret dialoogvenster */
+#hiddenModal{
+  width: 55em;
+  height: 25em;
+  border-color: #FEFEFE;
+  background-color: #CE000C;
+  border-style: dotted;
+  border-radius: 1em;
+}
+
+/* Tekst binnen de dialoogvensters */
+dialog p {
+  display: block;
+  margin-left: 2em;
+  margin-right: 1em;
+  font-size: 1.2em;
+  text-align: left;
+  color: var(--color-dialog-text);
+}
+
+/* Tekst binnen secret dialoogvenster */
+#hiddenModal p {
+  display: block;
+  margin-left: 2em;
+  margin-right: 1em;
+  font-size: 1.2em;
+  text-align: left;
+  color: #FEFEFE;
+}
+
+#hiddenModal h2 {
+  color: #FEFEFE;
+}
+
+dialog article{
+  display: flex;
+}
+
+/* Styling van de knop om dialoogvensters te openen */
 #btnOpen {
   width: 5em;
   height: 3em;
@@ -308,10 +357,8 @@ dialog {
   border-radius: 28px;
   color:  var(--color-paragraph);
   background: #ffecf1;
-
   text-decoration: none;
   text-align: center;
-
   border-style:dotted ;
   border-color: #e06187;
   display: block;
@@ -333,23 +380,57 @@ dialog {
   color: #ffecf1;
 }
 
+/* secret button */
+#hiddenButton{
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  display: none;
+  width: 2em;
+  height: auto;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
 .button-close {
   width: 2em;
   height: 2em;
+  border-radius: 20%;
   border-style: none;
   color:  var(--color-dialog-background);
   background: var(--color-headings);
   font-family: "futura-bold", sans-serif;
-  display: block;
-  margin: auto;
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
 }
 
 .button-close p {
  text-align: center;
-
+ /* font-size: 2em; */
 }
 
-/* dialog::backdrop {
-  background: 
-  opacity: 0.2;
-} */
+dialog::backdrop {
+  background: #2d2d2d;
+  opacity: 0.6;
+}
+
+/* De video binnen het tweede dialoogvenster */
+.video1 {
+  width: 18em; 
+  height: 13em;
+  border-radius: 0.8em;
+  display: block;
+  margin: auto;
+  margin-left: 0.8em;
+}
+
+/* Gallerij met foto's in modal 1 */
+
+.column {
+  float: left;
+  width: 18%;
+  display: block;
+  margin: auto;
+}

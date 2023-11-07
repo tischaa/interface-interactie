@@ -26,7 +26,7 @@
       <!-- Filmrol -->
       <article>
         <img src="images/filmrol.png" alt="filmrol"/>
-        <button class="open-button2" id="btnOpen"><p>1983</p></button>
+        <button class="open-button2" id="btnOpen"><p>1987</p></button>
       </article>
       <!-- Polaroid foto's -->
       <article class="image-container2">
@@ -47,7 +47,7 @@
       </article>
       <!-- Video -->
       <article>
-        <video width="320" height="240" controls>
+        <video class="video2" poster="images/placeholder2.png" controls>
           <source src="images/video2.mp4" type="video/mp4">
        </video>
        <button class="open-button6" id="btnOpen"><p>2023</p></button>
@@ -59,12 +59,35 @@
       <dialog id="modal1">
         <h2>1974: Hello Kitty's geboorte</h2>
         <button class="button-close" id="close-button1">x</button>
-        
+        <p><b>Hoi Hoi,</b> welkom op mijn muur met herinneringen. Ik ben Hello Kitty en ik neem je mee door een tijdlijn van hoogtepunten uit mijn leven. 1974 is het jaar waarin ik ben geboren! De Japanse ontwerpster <a href="https://en.wikipedia.org/wiki/Yuko_Shimizu">Yuko Shimizu</a> heeft mij uitgevonden. Even voorstellen: mijn volledige naam is Kitty White, en ik woon samen met mijn ouders en zusje Mimmy in Londen. Ik heb vaak een strikje in mijn haar. Geen zorgen, door de tijdlijn heen kom je nog veel meer over mij en mijn vrienden te weten! Hieronder zie je wat plaatjes van mij in mijn eerste jaren.</p>
+          <article class="gallery">
+            <div class="column">
+              <img src="/images/1974.png" alt="1974">
+            </div>
+            <div class="column">
+              <img src="/images/1975.png" alt="1975">
+            </div>
+            <div class="column">
+              <img src="/images/1976.png" alt="1976">
+            </div>
+            <div class="column">
+              <img src="/images/1977.png" alt="1977">
+            </div>
+            <div class="column">
+              <img src="/images/1978.png" alt="1977">
+            </div>
+          </article>
       </dialog>
 
       <dialog id="modal2">
-        <h2>1983: Hello Kitty’s Furry Tale Theatre</h2>
+        <h2>1987: Hello Kitty’s Furry Tale Theater</h2>
         <button class="button-close" id="close-button2">x</button>
+          <article>
+            <video class="video1" poster="images/placeholder1.png" controls>
+              <source src="images/video.mp4" type="video/mp4">
+            </video>
+            <p><b>Lieve vrienden,</b> ik herinner me nog goed de tijd toen Hello Kitty's Furry Tale Theater voor het eerst op televisie verscheen. Het was voor mij een onvergetelijk moment, want het was mijn allereerste animatieserie. Dat was in het jaar 1987, en het voelde als het begin van een spannend avontuur.Deze serie was een bijzondere samenwerking tussen Japan en Amerika. Elke aflevering bracht een beroemd sprookje of een bekende film tot leven, en raad eens wie de hoofdrol speelden? Ja, jullie raden het goed, ik en mijn vrienden! Het was magisch om in de schoenen van beroemde sprookjesfiguren te stappen en onze eigen versies van deze verhalen te beleven en te vertellen.</p>
+        </article>
       </dialog>
 
       <dialog id="modal3">
@@ -74,7 +97,7 @@
 
       <dialog id="modal4">
         <h2>2008: The Adventures of Hello Kitty & Friends</h2>
-        <button class="button-close" id="close-button4">x</button>
+        <button class="button-close" id="close-button4"><strong>x</strong></button>
       </dialog>
 
       <dialog id="modal5">
@@ -88,6 +111,16 @@
       </dialog>
 
     </section>
+
+    <button class="open-button7" id="hiddenButton"><img id="helloSatan" src="images/hkdevil.jpg" alt=""></button>
+    <dialog id="hiddenModal"> 
+      <h2>90's: Hello Kitty Devil Era</h2>
+      <!-- Tekst deels door chatGPT. Prompt: Vertel, vanuit Hello Kitty's perspectief, in ongeveer 200 woorden wat de complottheorien inhielden in de jaren '90 die zeiden dat Hello Kitty verband had met de duivel. Gebruik deze bron: https://www.toynk.com/blogs/news/what-does-hello-kitty-mean-backwards -->
+      <p><b>MEOOOWWWW!</b> In de jaren '90 ontstonden er bijzondere theoriën, die suggereerden dat ik verband hield met duistere zaken. Een van de meest opmerkelijke theorieën beweerde dat mijn naam, "Hello Kitty," achterstevoren gespeld "ythik olleh" zou zijn, wat klinkt als "Evil Kitty" (Kwaadaardige Kitty) in het Engels. Dit leidde tot speculaties dat ik in feite een duivelse entiteit was die verborgen boodschappen verspreidde. Natuurlijk was dit niets meer dan een speelse omkering van letters, ver van de werkelijkheid.
+        Sommigen suggereerden ook dat mijn afwezigheid van een mond een teken was dat ik betrokken was bij duistere geheimen en dat ik niet de vrolijke kat was die ik leek. Maar laten we eerlijk zijn, ik heb geen mond omdat ik altijd blij ben!</p>
+      <button class="button-close" id="close-button7">x</button>
+    </dialog>
+
     <script src="scripts/script.js"></script>
   </body>
 </html>
