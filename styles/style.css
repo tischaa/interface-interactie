@@ -3,12 +3,6 @@
   src: url("../fonts/frankfurter-regular.woff2") format("woff2");
 }
 
-@font-face {
-  font-family: "futura-pt", sans-serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
 naar een idee van Jen Simmons *,
 *::after,
 *::before {
@@ -66,7 +60,6 @@ button:not([disabled]) {
 }
 
 img {
-  cursor: pointer;
   max-width: 100%;
 }
 
@@ -124,14 +117,14 @@ section {
 article:nth-of-type(1) > img:nth-of-type(1) {
   transform: translate(2.6em, 1em); 
   flex: 1;
-  padding: 1.25em; 
   max-width: 250px;
 }
 
 article:nth-of-type(1) > img:nth-of-type(2) {
+  transform: translate(-2em); 
   position: absolute;
   top: -3em;
-  left: 70px;
+  left: 5em;
   height: 15em;
   scale: 1;
   rotate: 5deg;
@@ -315,44 +308,48 @@ dialog {
   border-radius: 28px;
   color:  var(--color-paragraph);
   background: #ffecf1;
-  /* padding: 10px 20px 10px 20px; */
+
   text-decoration: none;
   text-align: center;
-  position: relative;
-  left: 40%;
-  border-style:dotted ;
 
+  border-style:dotted ;
+  border-color: #e06187;
+  display: block;
+  margin: auto;
 }
 
 #btnOpen p{
-
   transform: translate(0, -0.8em);
   /* font-size: 0.8em; */
-
 }
 
 #btnOpen:hover {
-  color: var(--color-paragraph-hover);
   background: #b34f6d;
   text-decoration: none;
+  border-color: #ffecf1;
 }
 
-#close-button {
+#btnOpen:hover p{
+  color: #ffecf1;
+}
+
+.button-close {
   width: 2em;
   height: 2em;
-
   border-style: none;
   color:  var(--color-dialog-background);
   background: var(--color-headings);
   font-family: "futura-bold", sans-serif;
+  display: block;
+  margin: auto;
 }
 
-#close-button p {
+.button-close p {
  text-align: center;
 
 }
 
-dialog::backdrop {
-  background: var(--color-headings);
+/* dialog::backdrop {
+  background: 
   opacity: 0.2;
-}
+} */

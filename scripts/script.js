@@ -29,16 +29,89 @@ tvButton.addEventListener("click", function() {
   }
 });
 
-const modal = document.querySelector("#modal1");
-const openModal = document.querySelector(".open-button1");
-const closeModal = document.querySelector("#close-button");
+// Modal 1
 
-openModal.addEventListener("click", () =>{
-  modal.showModal();
+const firstModal = document.querySelector("#modal1");
+const openFirstModal = document.querySelector(".open-button1");
+const closeFirstModal = document.querySelector("#close-button1");
+
+openFirstModal.addEventListener("click", () =>{
+  firstModal.showModal();
 });
 
-closeModal.addEventListener("click", () =>{
-  modal.close();
+closeFirstModal.addEventListener("click", () =>{
+  firstModal.close();
+});
+
+// Modal 2
+
+const secondModal = document.querySelector("#modal2");
+const openSecondModal = document.querySelector(".open-button2");
+const closeSecondModal = document.querySelector("#close-button2");
+
+openSecondModal.addEventListener("click", () =>{
+  // console.log("Modal 2 is geklikt jonge");
+  secondModal.showModal();
+});
+
+closeSecondModal.addEventListener("click", () =>{
+  secondModal.close();
+});
+
+// Modal 3
+
+const thirdModal = document.querySelector("#modal3");
+const openThirdModal = document.querySelector(".open-button3");
+const closeThirdModal = document.querySelector("#close-button3");
+
+openThirdModal.addEventListener("click", () =>{
+  thirdModal.showModal();
+});
+
+closeThirdModal.addEventListener("click", () =>{
+  thirdModal.close();
+});
+
+// Modal 4
+
+const fourthModal = document.querySelector("#modal4");
+const openFourthModal = document.querySelector(".open-button4");
+const closeFourthModal = document.querySelector("#close-button4");
+
+openFourthModal.addEventListener("click", () =>{
+  fourthModal.showModal();
+});
+
+closeFourthModal.addEventListener("click", () =>{
+  fourthModal.close();
+});
+
+// Modal 5
+
+const fifthModal = document.querySelector("#modal5");
+const openFifthModal = document.querySelector(".open-button5");
+const closeFifthModal = document.querySelector("#close-button5");
+
+openFifthModal.addEventListener("click", () =>{
+  fifthModal.showModal();
+});
+
+closeFifthModal.addEventListener("click", () =>{
+  fifthModal.close();
+});
+
+// Modal 6
+
+const sixthModal = document.querySelector("#modal6");
+const openSixthModal = document.querySelector(".open-button6");
+const closeSixthModal = document.querySelector("#close-button6");
+
+openSixthModal.addEventListener("click", () =>{
+  sixthModal.showModal();
+});
+
+closeSixthModal.addEventListener("click", () =>{
+  sixthModal.close();
 });
 
 
