@@ -12,41 +12,81 @@
 
   <body>
     <h1>Hello Kitty's memory wall</h1>
+    <!-- De afbeeldingen -->
     <section class="grid-container">
+      <!-- Enveloppen -->
       <article>
         <article class="image-container">
           <img class="closed-envelope" src="images/envelop.png" alt="envelop" />
           <img class="transition-image" src="images/envelop2.png" alt="envelop"/>
         </article>
-        <p>1974</p>
+        <button class="open-button1" id="btnOpen"><p>1974</p></button>
+        </dialog>
       </article>
+      <!-- Filmrol -->
       <article>
-        <img src="images/filmrol.png" alt="filmrol" />
-        <p>1983</p>
+        <img src="images/filmrol.png" alt="filmrol"/>
+        <button class="open-button2" id="btnOpen"><p>1983</p></button>
       </article>
+      <!-- Polaroid foto's -->
       <article class="image-container2">
         <img class="foto1" src="images/polaroid1.png" alt="polaroids" />
         <img class="foto2" src="images/polaroid2.png" alt="polaroids" />
-        <p>1994</p>
+        <button class="open-button3" id="btnOpen"><p>1994</p></button>
       </article>
+      <!-- TV element -->
       <article class="image-container3">
         <img id="tv-uit-image" src="images/tv-uit.png" alt="tv uit" />
-        <!-- <img id="tv-aan-image" src="images/tv-aan.png" alt="tv aan" style="display: none;"/> -->
         <button id="toggle-button">TV aan</button>
-        <p>2008</p>
+        <button class="open-button4" id="btnOpen"><p>2008</p></button>
       </article>
+      <!-- Luchtballon -->
       <article>
         <img src="images/ballon.png" alt="luchtballon" />
-        <p>2014</p>
+        <button class="open-button5" id="btnOpen"><p>2014</p></button>
       </article>
+      <!-- Video -->
       <article>
         <video width="320" height="240" controls>
           <source src="images/video2.mp4" type="video/mp4">
        </video>
-        <p>2023</p>
+       <button class="open-button6" id="btnOpen"><p>2023</p></button>
       </article>
     </section>
 
+    <!-- De modals -->
+    <section>
+      <dialog id="modal1">
+        <h2>Hello Kitty's geboorte</h2>
+        <button id="close-button">x</button>
+      </dialog>
+
+      <dialog id="modal2">
+        <h2>Hello Kitty's geboorte</h2>
+        <button id="close-button">Sluiten</button>
+      </dialog>
+
+      <dialog id="modal3">
+        <h2>Hello Kitty's geboorte</h2>
+        <button id="close-button">Sluiten</button>
+      </dialog>
+
+      <dialog id="modal4">
+        <h2>Hello Kitty's geboorte</h2>
+        <button id="close-button">Sluiten</button>
+      </dialog>
+
+      <dialog id="modal5">
+        <h2>Hello Kitty's geboorte</h2>
+        <button id="close-button">Sluiten</button>
+      </dialog>
+
+      <dialog id="modal6">
+        <h2>Hello Kitty's geboorte</h2>
+        <button id="close-button">Sluiten</button>
+      </dialog>
+
+    </section>
 
     <script src="scripts/script.js"></script>
   </body>
