@@ -121,13 +121,13 @@ section {
 } */
 
 article:nth-of-type(1) > img:nth-of-type(1) {
-  transform: translate(2.6em, 1em); 
+  transform: translate(3.2em, 1em); 
   flex: 1;
   max-width: 250px;
 }
 
 article:nth-of-type(1) > img:nth-of-type(2) {
-  transform: translate(-2em); 
+  transform: translate(-1em); 
   position: absolute;
   top: -3em;
   left: 5em;
@@ -276,6 +276,12 @@ article:nth-of-type(5) {
 }
 
 article:nth-of-type(5) img{
+  max-width: 13em;
+  height: auto;
+  display: block;
+  margin: auto;
+  padding-bottom: 1em;
+  padding-top: 1em;
   animation-name: floating;
   animation-duration: 2s;
   animation-iteration-count: infinite;
@@ -293,7 +299,7 @@ article:nth-of-type(5) img{
 .video2{
   width: 20em; 
   height: auto;
-  transform: translate(1em);
+  transform: translate(1em, 1em);
   border-radius: 0.8em;
 }
 
@@ -308,6 +314,7 @@ dialog {
   background-color: var(--color-dialog-background);
   border-style: dotted;
   border-radius: 1em;
+  overflow: hidden;
 }
 
 /* Styling van secret dialoogvenster */
@@ -357,9 +364,7 @@ dialog p {
   color: #FEFEFE;
 }
 
-dialog article{
-  display: flex;
-}
+
 
 /* Styling van de knop om dialoogvensters te openen */
 #btnOpen {
@@ -367,12 +372,12 @@ dialog article{
   height: 3em;
   transform: translate(0, 2em);
   border-radius: 28px;
+  border-color: #ffecf1;
+  border-style:dotted ;
   color:  var(--color-paragraph);
-  background: #ffecf1;
   text-decoration: none;
   text-align: center;
-  border-style:dotted ;
-  border-color: var(--color-hellokitty-red);
+  background: var(--color-hellokitty-red);
   display: block;
   margin: auto;
 }
@@ -380,17 +385,24 @@ dialog article{
 #btnOpen p{
   transform: translate(0, -0.8em);
   /* font-size: 0.8em; */
+  color: #ffecf1;
 }
 
 #btnOpen:hover {
-  background: var(--color-hellokitty-red);
+  background: #ffecf1;
+  border-color: var(--color-hellokitty-red);
   text-decoration: none;
-  border-color: #ffecf1;
 }
 
 #btnOpen:hover p{
-  color: #ffecf1;
+  color: var(--color-hellokitty-red);
 }
+
+/* #btnOpen:active {
+  background: #ffecf1;
+  border-color: var(--color-hellokitty-red);
+  text-decoration: none;
+} */
 
 /* secret button */
 #hiddenButton{
@@ -428,6 +440,34 @@ dialog::backdrop {
   opacity: 0.6;
 }
 
+/* Modal 1 */
+
+/* Gallerij met foto's in modal 1 */
+
+.column {
+  float: left;
+  width: 16%;
+  display: block;
+  margin: 0 1em 0 1em;
+}
+
+.column img{
+height: 80%;
+}
+
+/* Clearfix (clear floats) */
+.gallery::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Modal 2 */
+
+.article1{
+  display: flex;
+}
+
 /* De video binnen het tweede dialoogvenster */
 .video1 {
   width: 18em; 
@@ -438,22 +478,44 @@ dialog::backdrop {
   margin-left: 0.8em;
 }
 
-/* Gallerij met foto's in modal 1 */
+/* Modal 3 */
 
-.column {
-  float: left;
-  width: 18%;
+.article2 {
+  display: flex;
+}
+
+.puroland {
+  width: 18em; 
+  height: 13em;
+  border-radius: 0.8em;
   display: block;
   margin: auto;
+  margin-left: 0.8em;
 }
 
-.column img{
-height: 80%;
+/* Modal 4 */
+
+.floatingBalloon{
+  width: 6em; 
+  height: 5.5em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  transform: translateY(-50%); /* Om verticaal te centreren */
+  animation: moveAndBounce 10s ease-in-out forwards; 
 }
 
-Clearfix (clear floats)
-.gallery::after {
-  content: "";
-  clear: both;
-  display: table;
+@keyframes moveAndBounce {
+  0% {
+    left: -10%;
+    transform: translateY(-50%);
+  }
+
+  100% {
+    left: 110%; /* Eindpositie rechts (horizontaal blijven) */
+    transform: translateY(-50%); /* Verticaal blijven */
+  }
 }
+
+/* Modal 5 */

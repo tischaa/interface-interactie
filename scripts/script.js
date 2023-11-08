@@ -133,4 +133,18 @@ setTimeout(() => {
 }, 10000);
 
 
+// function showDiv1(elem) {
 
+//   var divsToCheck = ["close","Holder"]; // Add to here to check more divs
+//   for (var i = 0; i < divsToCheck.length; i++) {
+//     if (divsToCheck[i] == elem) {
+//       setTimeout(function() {
+//          document.getElementById(divsToCheck[i]).style.display = "block";
+//       }, 500);
+//     } else {
+//       setTimeout(function() {
+//         document.getElementById(divsToCheck[i]).style.display = "none";
+//       }, 500);
+//     }
+//   }
+// }
