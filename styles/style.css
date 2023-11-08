@@ -490,17 +490,21 @@ height: 80%;
 
 .article2 {
   display: flex;
-  margin: auto;
 }
 
-/* De afbeelding binnen het tweede dialoogvenster */
-.article2 img {
-  width: 18em; 
+/* De afbeelding binnen het derde dialoogvenster */
+.article2 a > img {
+  max-width: 140%;
   height: auto;
   border-radius: 0.8em;
-  position: relative;
+  display: block;
   margin: auto;
-  margin-left: 0.8em;
+  margin: 2.8em;
+
+}
+
+.article2 p {
+  margin-left: 8em;
 }
 
 /* Modal 4 */
@@ -511,20 +515,19 @@ height: 80%;
   position: absolute;
   bottom: 0;
   left: 0;
+  rotate: -10deg;
 
   transform: translateY(-50%); /* Om verticaal te centreren */
-  animation: moveAndBounce 10s ease-in-out forwards; 
+  animation: moveRight 20s ease-in-out forwards; 
 }
 
-@keyframes moveAndBounce {
+@keyframes moveRight {
   0% {
     left: -10%;
-    transform: translateY(-50%);
   }
 
   100% {
-    left: 110%; /* Eindpositie rechts (horizontaal blijven) */
-    transform: translateY(-50%); /* Verticaal blijven */
+    left: 110%;
   }
 }
 
@@ -535,12 +538,43 @@ height: 80%;
   margin: auto;
 }
 
-/* De afbeelding binnen het tweede dialoogvenster */
+/* De afbeelding binnen het vierde dialoogvenster */
 .article3 img {
-  width: 30%; 
+  height: 18em;
   padding-right: 3em;
   display: block;
   margin: auto;
-
 }
-    
+
+/* Modal 6 */
+
+
+/* Afbeelding geïnspireerd op: https://www.facebook.com/MWMediaPH/photos/a.247512092402412/985439151943032/?type=3 */
+
+#jumpscare{
+  visibility: hidden;
+  max-width: 100%;
+  transform: translate(0, -28em);
+}
+
+#scaryButton{
+  font-size: 1.3em;
+  padding: 0.8em;
+  display: block;
+  margin: auto;
+  left: 50%;
+  border-radius: 3em;
+  border-color: var(--color-hellokitty-red);
+  color:  var(--color-paragraph);
+  text-decoration: none;
+  text-align: center;
+  background: #ffecf1;
+  font-family: "futura-pt";
+  color: #2d2d2d;
+}
+
+#scaryButton:hover {
+  background: #FFB6D2;
+  border-color: #ffecf1;
+  text-decoration: none;
+}

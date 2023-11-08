@@ -8,8 +8,6 @@ const tvButton = document.getElementById("toggle-button");
 const tvImage = document.getElementById("tv-uit-image");
 
 var tvAan = false;
-// const tvAanImage = document.getElementById("tv-aan-image");
-
 
 tvButton.addEventListener("click", function() {
 
@@ -48,7 +46,6 @@ const openSecondModal = document.querySelector(".open-button2");
 const closeSecondModal = document.querySelector("#close-button2");
 
 openSecondModal.addEventListener("click", () =>{
-  // console.log("Modal 2 is geklikt jonge");
   secondModal.showModal();
 });
 
@@ -133,19 +130,18 @@ setTimeout(() => {
 }, 10000);
 
 
-// function showDiv1(elem) {
+//Jumpscare tutorial (aangepast): https://www.youtube.com/watch?v=dkICY007oa0
 
-//   var divsToCheck = ["close","Holder"]; // Add to here to check more divs
-//   for (var i = 0; i < divsToCheck.length; i++) {
-//     if (divsToCheck[i] == elem) {
-//       setTimeout(function() {
-//          document.getElementById(divsToCheck[i]).style.display = "block";
-//       }, 500);
-//     } else {
-//       setTimeout(function() {
-//         document.getElementById(divsToCheck[i]).style.display = "none";
-//       }, 500);
-//     }
-//   }
-// }
+// Het selecteren van de knop met behulp van de id
+var button = document.getElementById('scaryButton');
 
+// Het selecteren van de jumpscare-afbeelding en audio
+var jumpscare = document.getElementById("jumpscare");
+// var audio = document.getElementById("scream");
+
+// Een eventlistener toevoegen om te reageren op de knopklik
+button.addEventListener('click', function() {
+   console.log("Scary button clicked");
+   jumpscare.style.visibility = "visible"; // Laat de jumpscare-afbeelding zien
+  //  audio.play(); // Speel het schreeuwgeluid af
+});
