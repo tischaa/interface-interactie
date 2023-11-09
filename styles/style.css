@@ -21,19 +21,19 @@ naar een idee van Jen Simmons *,
 
 /* Scrollbar tutorial: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 0.625em;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 10px grey; 
-  border-radius: 10px;
+  box-shadow: inset 0 0 0.625em grey; 
+  border-radius: 0.625em;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--color-hellokitty-red);; 
-  border-radius: 10px;
+  border-radius: 0.625em;
 }
 
 /* Favicon: https://www.stickpng.com/img/comics-and-fantasy/hello-kitty/hello-kitty */
@@ -42,13 +42,13 @@ naar een idee van Jen Simmons *,
 body {
   background-image: repeating-linear-gradient(
       0deg,
-      rgba(255, 203, 224, 0.3) 0px 8px,
-      transparent 8px 16px
+      rgba(255, 203, 224, 0.3) 0em 0.5em,
+      transparent 0.5em 1em
     ),
     repeating-linear-gradient(
       90deg,
-      rgba(255, 203, 224, 0.3) 0px 8px,
-      transparent 8px 16px
+      rgba(255, 203, 224, 0.3) 0px 0.5em,
+      transparent 0.5em 1em
     );
 }
 
@@ -185,8 +185,8 @@ Bron: https://www.ebay.com/itm/403433832261*/
   max-width: 12.5em;
   position: absolute;
   rotate: 0deg;
-  top: 0px;
-  left: 0px;
+  top: 0em;
+  left: 0em;
   opacity: 1;
   scale: 0.8;
 }
