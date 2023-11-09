@@ -127,8 +127,7 @@ const hiddenButton = document.getElementById('hiddenButton');
 setTimeout(() => {
   hiddenButton.style.display = 'block';
 
-}, 10000);
-
+}, 20000);
 
 //Jumpscare tutorial (aangepast): https://www.youtube.com/watch?v=dkICY007oa0
 
@@ -137,7 +136,6 @@ var button = document.getElementById('scaryButton');
 
 // Het selecteren van de jumpscare-afbeelding en audio
 var jumpscare = document.getElementById("jumpscare");
-// var audio = document.getElementById("scream");
 
 // Een eventlistener toevoegen om te reageren op de knopklik
 button.addEventListener('click', function() {

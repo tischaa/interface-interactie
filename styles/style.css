@@ -19,6 +19,7 @@ naar een idee van Jen Simmons *,
   --color-hellokitty-red: #CE000C;
 }
 
+/* Scrollbar tutorial: https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -35,6 +36,9 @@ naar een idee van Jen Simmons *,
   border-radius: 10px;
 }
 
+/* Favicon: https://www.stickpng.com/img/comics-and-fantasy/hello-kitty/hello-kitty */
+
+/* Geruite achtergrond https://codepen.io/yochans/pen/QWpbyVB?editors=1100 */
 body {
   background-image: repeating-linear-gradient(
       0deg,
@@ -74,7 +78,7 @@ h1 {
   font-family: "Frankfurter", "futura-pt", sans-serif;;
   text-align: center;
   font-size: 3em;
-  letter-spacing: 1px;
+  letter-spacing: 0.05em;
 }
 
 h2 {
@@ -82,7 +86,7 @@ h2 {
   font-family: "Frankfurter", "futura-pt", sans-serif;;
   text-align: center;
   font-size: 2em;
-  letter-spacing: 1px;
+  letter-spacing: 0.05em;
 }
 
 a {
@@ -107,7 +111,10 @@ section {
   align-items: center;
 }
 
-/* Enveloppen */
+/* Enveloppen
+Afbeeldingen in galerij modal 1: https://medium.com/@fatiha.tonari/the-special-side-bow-5ba6b600c8fb
+Galerij tutorial: https://www.w3schools.com/css/css_image_gallery.asp
+Afbeelding in envelop: http://hellokitty.over-blog.com/article-fond-d-ecran-special-35-ans-41600110.html */
 
 .image-container {
   width: 100%;
@@ -120,7 +127,7 @@ section {
 article:nth-of-type(1) > img:nth-of-type(1) {
   transform: translate(3.2em, 1em); 
   flex: 1;
-  max-width: 250px;
+  max-width: 15.625em;
 }
 
 article:nth-of-type(1) > img:nth-of-type(2) {
@@ -143,12 +150,15 @@ body > section article:nth-of-type(1) .transition-image:hover {
 }
 
 /* Filmrol */
+/* Hello Kitty’s Furry Tale Theater (video en stills uit video): https://www.youtube.com/watch?v=Z6AvoLAUswM
+Hello Kitty’s Furry Tale Theater poster: https://sanrio.fandom.com/wiki/Hello_Kitty's_Furry_Tale_Theater */
 
 article:nth-of-type(2) > img {
   width: 30em;
 }
 
 /* Polaroid foto's */
+/* Bron Sanrio Puroland afbeelding in modal: https://www.japan.travel/en/spot/1630/ */
 
 article:nth-of-type(3) {
   position: relative;
@@ -159,19 +169,20 @@ article:nth-of-type(3) {
   transform: translate(5.5em);
 }
 
-/* Achterste polaroid */
+/* Achterste polaroid 
+Bron: https://www.amazon.co.jp/-/en/Telephone-Card-Sanrio-Puroland-Count/dp/B08388C4L6*/
 .image-container2 > img:nth-of-type(1) {
   flex: 1;
-  /* padding: 30px; */
-  max-width: 200px;
+  max-width: 12.5em;
   position: relative;
   scale: 0.8;
 }
 
-/* Voorste polaroid */
+/* Voorste polaroid 
+Bron: https://www.ebay.com/itm/403433832261*/
 .image-container2 > img:nth-of-type(2) {
   padding: 1em;
-  max-width: 200px;
+  max-width: 12.5em;
   position: absolute;
   rotate: 0deg;
   top: 0px;
@@ -182,24 +193,26 @@ article:nth-of-type(3) {
 
 /* Achterste polaroid hover state*/
 .image-container2:hover > img:nth-of-type(1) {
-  max-width: 200px;
+  max-width: 12.5em;
   position: relative;
-  transform: translate(20px);
+  transform: translate(1.25em);
   rotate: -10deg; 
   scale: 0.8;
 }
 
 /* Voorste polaroid hover state*/
 .image-container2:hover > img:nth-of-type(2) {
-  padding: 30px;
-  max-width: 200px;
+  padding: 1.875em;
+  max-width: 12.5em;
   position: absolute;
   opacity: 1;
   scale: 0.8;
   rotate: 5deg;
 }
 
-/* TV */
+/* TV 
+Afbeelding in tv-scherm: https://en.wikipedia.org/wiki/The_Adventures_of_Hello_Kitty_%26_Friends
+DVD’s: https://www.amazon.nl/Hello-Kitty-Avventure-Friends-Region/dp/B0041KY56U/ref=sr_1_15?__mk_nl_NL=ÅMÅŽÕÑ&crid=29MUPQ6PSYDLL&keywords=hello+kitty+and+friends+dvd&qid=1699534577&sprefix=hello+kitty+and+friends+dvd%2Caps%2C79&sr=8-15*/
 
 .image-container3 {
   position: relative;
@@ -224,11 +237,12 @@ article:nth-of-type(4) img {
   z-index: 2;
 }
 
-/* Afstandsbediening toggle knop */
+/* Afstandsbediening toggle knop 
+Tutorial: https://www.w3schools.com/howto/howto_css_switch.asp*/
 
 #toggle-button {
-  height: 80px;
-  width: 40px; 
+  height: 5em;
+  width: 2.5em; 
   background-color: #555;
   border-radius: 5%;
   text-align: center;
@@ -244,14 +258,15 @@ article:nth-of-type(4) img {
 
 #toggle-button:hover {
   background-color: rgb(255, 230, 248);
-  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
-    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 0.75em 1em 0 rgba(0, 0, 0, 0.24),
+    0 1em 3em 0 rgba(0, 0, 0, 0.19);
   color: #2d2d2d;
 }
 
 
 /* Luchtballon animatie 
-   Animation (aangepast): https://codepen.io/whusterj/pres/bdYKop?editors=1100 */
+   Animation (aangepast): https://codepen.io/whusterj/pres/bdYKop?editors=1100 
+   Afbeelding Luchtballon: https://fineartamerica.com/featured/hello-kitty-balloon-at-macys-thanksgiving-day-parade-david-oppenheimer.html*/
 
 article:nth-of-type(5) {
   transform: translate(0em, -2em);
@@ -274,6 +289,7 @@ article:nth-of-type(5) img{
 }
 
 /* Video */
+/* Video Hello Kitty Super Style: https://www.youtube.com/watch?v=2-guoQoeAtM*/
 
 .video2{
   width: 20em; 
@@ -281,8 +297,6 @@ article:nth-of-type(5) img{
   transform: translate(1em, 1em);
   border-radius: 0.8em;
 }
-
-/* Modal styling */
 
 /* Styling van dialoogvensters */
 dialog {
@@ -342,14 +356,12 @@ dialog p {
   color: #FEFEFE;
 }
 
-
-
 /* Styling van de knop om dialoogvensters te openen */
 #btnOpen {
   width: 5em;
   height: 3em;
   transform: translate(0, 2em);
-  border-radius: 28px;
+  border-radius: 1.75em;
   border-color: #ffecf1;
   border-style:dotted ;
   color:  var(--color-paragraph);
@@ -362,7 +374,6 @@ dialog p {
 
 #btnOpen p{
   transform: translate(0, -0.8em);
-  /* font-size: 0.8em; */
   color: #ffecf1;
 }
 
