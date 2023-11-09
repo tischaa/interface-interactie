@@ -143,5 +143,4 @@ var jumpscare = document.getElementById("jumpscare");
 button.addEventListener('click', function() {
    console.log("Scary button clicked");
    jumpscare.style.visibility = "visible"; // Laat de jumpscare-afbeelding zien
-  //  audio.play(); // Speel het schreeuwgeluid af
 });

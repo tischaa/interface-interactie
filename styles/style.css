@@ -85,8 +85,12 @@ h2 {
   letter-spacing: 1px;
 }
 
-a{
+a {
   color: var(--color-hellokitty-red);
+}
+
+a:hover{
+  color: var(--color-headings);
 }
 
 p {
@@ -113,13 +117,6 @@ section {
   transform: translate(0em,-2em);
 }
 
-/* section > article:nth-of-type(1) {
-  transform: translate(2.6em); 
-  flex: 1;
-  padding: 1.25em; 
-  max-width: 250px;
-} */
-
 article:nth-of-type(1) > img:nth-of-type(1) {
   transform: translate(3.2em, 1em); 
   flex: 1;
@@ -145,12 +142,6 @@ body > section article:nth-of-type(1) .transition-image:hover {
   opacity: 0;
 }
 
-/* article:nth-of-type(2) {
-   transform: translate(10em);
-  padding: 30px;
-  max-width: 390px; 
-} */
-
 /* Filmrol */
 
 article:nth-of-type(2) > img {
@@ -167,10 +158,6 @@ article:nth-of-type(3) {
 .image-container2 img{
   transform: translate(5.5em);
 }
-
-/* .image-container2 p{
-  transform: translate(0em, -2em);
-} */
 
 /* Achterste polaroid */
 .image-container2 > img:nth-of-type(1) {
@@ -225,11 +212,6 @@ article:nth-of-type(4) img {
   width:100%;
 }
 
-/* article:nth-of-type(4) p {
-  grid-column-start: 1;
-  grid-column-end: 3;
-} */
-
 .tv-uit-image {
   scale: 2;
   margin-bottom: 2em;
@@ -282,10 +264,7 @@ article:nth-of-type(5) img{
   margin: auto;
   padding-bottom: 1em;
   padding-top: 1em;
-  animation-name: floating;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease;
+  animation: floating 2s infinite ease; 
 }
 
 @keyframes floating {
@@ -307,7 +286,6 @@ article:nth-of-type(5) img{
 
 /* Styling van dialoogvensters */
 dialog {
-  /* padding: 1em; */
   width: 55em;
   height: 25em;
   border-color: var(--color-hellokitty-red);
@@ -440,7 +418,6 @@ dialog p {
 
 .button-close p {
  text-align: center;
- /* font-size: 2em; */
 }
 
 dialog::backdrop {
@@ -493,6 +470,7 @@ height: 80%;
 }
 
 /* De afbeelding binnen het derde dialoogvenster */
+
 .article2 a > img {
   max-width: 140%;
   height: auto;
@@ -507,7 +485,7 @@ height: 80%;
   margin-left: 8em;
 }
 
-/* Modal 4 */
+/* Modal 5 */
 
 .floatingBalloon{
   width: 6em; 
@@ -531,14 +509,14 @@ height: 80%;
   }
 }
 
-/* Modal 5 */
-
 .article3 {
   display: flex;
   margin: auto;
 }
 
-/* De afbeelding binnen het vierde dialoogvenster */
+/* De afbeelding binnen het vijfde dialoogvenster */
+/* Afbeelding bron: https://fineartamerica.com/featured/hello-kitty-balloon-at-macys-thanksgiving-day-parade-david-oppenheimer.html */
+
 .article3 img {
   height: 18em;
   padding-right: 3em;
@@ -546,9 +524,8 @@ height: 80%;
   margin: auto;
 }
 
-/* Modal 6 */
 
-
+/* Jumpscare animatie */
 /* Afbeelding geïnspireerd op: https://www.facebook.com/MWMediaPH/photos/a.247512092402412/985439151943032/?type=3 */
 
 #jumpscare{
